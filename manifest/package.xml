@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AEMC_SendSmsPEAction</members>
+        <members>AEMC_SendSmsFlowAction</members>        
+        <members>AEMC_SendSmsQueueable</members>
+        <members>AEMC_SendSms_Tests</members>
+        <members>AEMC_SendSms_Tests_Mock</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AEMC_SendSms__e</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>AEMC_SendSms</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>AEMC_SendSms</members>
+        <name>FlowDefinition</name>
+    </types>
+    <types>
+        <members>AEMC_SendSms_Permissions</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>AEMC_APILAYER</members>
+        <members>AEMC_APIs_AUTH</members>
+        <members>AEMC_APIs_REST</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <version>56.0</version>
+</Package>
