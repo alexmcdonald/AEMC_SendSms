@@ -78,7 +78,9 @@ The SMS message is sent using Salesforce Marketing Cloud MobileConnect.  For thi
 
 ![sf-remote-1](https://github.com/alexmcdonald/AEMC_SendSms/assets/3958480/e7d82fd9-b4d7-4c96-ab90-22f0ed5b8ef1)
 
-5. In Setup, Quick Find "Marketing App Extensions".  Create a new extension and activate it, then change to its related list and create a new External Action.  In the **Invocable Action** field, select the AEMC_SendSmsPEAction.  In the Invocable Action Schema, locate the section for **reformatNumber**, and change it's type from "int" to "number", and it's value from "" to either "1" (do reformat using APILayer callout) or "0" (don't reformat).  Then select the _Active in Automations_ checkbox, and Save the action.
+5. In Setup, Quick Find "Marketing App Extensions".  Create a new extension and activate it, then change to its related list and create a new External Action.  In the **Invocable Action** field, select the AEMC_SendSmsPEAction.  ~~In the Invocable Action Schema, locate the section for **reformatNumber**, and change it's type from "int" to "number", and it's value from "" to either "1" (do reformat using APILayer callout) or "0" (don't reformat).~~ [THIS STEP HAS BEEN REMOVED, IGNORE THE HIGHLIGHTED TEXT IN THE SCREENSHOT BELOW]
+
+Then select the _Active in Automations_ checkbox, and Save the action.
 
 ![sf-me-1](https://github.com/alexmcdonald/AEMC_SendSms/assets/3958480/767cab8d-b5aa-4625-a97d-a8e7dcf42449)
 
