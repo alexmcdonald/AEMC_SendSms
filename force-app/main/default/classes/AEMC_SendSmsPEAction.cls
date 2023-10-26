@@ -45,7 +45,7 @@ public class AEMC_SendSmsPEAction {
         AEMC_SendSms__e ev = new AEMC_SendSms__e();
         ev.mobileNumber__c = input.mobileNumber;
         ev.messageContent__c = input.messageContent.left(160);
-        ev.reformatNumber__c = (input.reformatNumber == 1) ? true : false;
+        ev.reformatNumber__c = (!String.isBlank(input.reformatNumber) && input.reformatNumber == '1') ? true : false;
         ev.countryCode__c = input.countryCode;
         
         System.debug('** Event Record: ' + ev);
@@ -59,7 +59,7 @@ public class AEMC_SendSmsPEAction {
         
         @InvocableVariable public String mobileNumber;
         @InvocableVariable public String messageContent;
-        @InvocableVariable public Integer reformatNumber;
+        @InvocableVariable public String reformatNumber;
         @InvocableVariable public String countryCode;
         
     }
