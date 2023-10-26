@@ -45,7 +45,7 @@ public class AEMC_SendSms_Tests {
         AEMC_SendSmsPEAction.InputData input = new AEMC_SendSmsPEAction.InputData();
         input.mobileNumber = '0411123123';
         input.messageContent = 'TEST MESSAGE';
-        input.reformatNumber = 1;
+        input.reformatNumber = '1';
         input.countryCode = 'AU';
       
         Test.startTest();
